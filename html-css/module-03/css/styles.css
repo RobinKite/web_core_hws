@@ -8,11 +8,6 @@ body {
     line-height: 24px;
 }
 
-h2 {
-    display: inline !important;
-    color: #03a9f4;
-}
-
 .header-list {
     list-style: none;
 }
@@ -39,6 +34,7 @@ h2 {
 .first-row-title,
 .second-row-title,
 .third-row-title {
+    display: inline !important;
     font-size: 30px;
     line-height: 17px;
     font-weight: 300;
