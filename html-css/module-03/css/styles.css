@@ -34,7 +34,7 @@ body {
 .first-row-title,
 .second-row-title,
 .third-row-title {
-    display: inline !important;
+    display: inline;
     font-size: 30px;
     line-height: 17px;
     font-weight: 300;
