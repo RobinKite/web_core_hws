@@ -9,7 +9,7 @@ body {
 }
 
 h2 {
-    display: inline;
+    display: inline !important;
 }
 
 .header-list {
