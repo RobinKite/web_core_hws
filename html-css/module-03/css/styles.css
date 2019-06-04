@@ -8,6 +8,10 @@ body {
     line-height: 24px;
 }
 
+h2 {
+    display: inline;
+}
+
 .header-list {
     list-style: none;
 }
