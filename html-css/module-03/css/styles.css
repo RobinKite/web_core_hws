@@ -10,6 +10,7 @@ body {
 
 h2 {
     display: inline !important;
+    color: #03a9f4;
 }
 
 .header-list {
