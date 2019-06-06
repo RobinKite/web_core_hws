@@ -273,6 +273,18 @@ img {
     background-color: #3a3e64;
 }
 
+.download-button {
+    border: none;
+    margin: 0;
+    padding: 14px 82px;
+    background-color: #e84545;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
