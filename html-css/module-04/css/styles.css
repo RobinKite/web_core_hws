@@ -91,14 +91,16 @@ img {
     margin-top: 87px;
 }
 
-h2 {
+.products-title,
+.news-title {
     font-size: 48px;
     line-height: 32px;
     text-transform: uppercase;
     text-align: center;
 }
 
-h2::after {
+.products-title::after,
+.news-title::after {
     display: block;
     width: 164px;
     height: 7px;
@@ -172,7 +174,6 @@ h2::after {
 .news-blog {
     margin-top: 80px;
     list-style-type: none;
-    float: left;
 }
 
 .news-blog-item {
@@ -185,13 +186,13 @@ h2::after {
     margin-bottom: 14px;
 }
 
-h3 {
+.blog-name {
     line-height: 26px;
     font-size: 18px;
     color: #555252;
 }
 
-h3::after {
+.blog-name::after {
     display: block;
     background: #4ec6ab;
     width: 136px;
