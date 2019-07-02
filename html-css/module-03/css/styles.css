@@ -1,3 +1,9 @@
+* {
+    /* outline: 1px solid red; */
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: "Playfair Display", "Arial", serif;
     color: #626262;
@@ -6,17 +12,19 @@ body {
 }
 
 .header-list {
-    max-width: 884px;
-    min-width: 400px;
+    width: 904px;
     margin: auto;
-    padding: 50px 40px;
+    padding: 70px 0 100px;
     text-align: center;
 }
 
 .header-list-item {
     display: inline-block;
-    margin-right: 40px;
-    padding-bottom: 10px;
+    margin-right: 50px;
+}
+
+.header-list-item:last-child {
+    margin-right: 0;
 }
 
 .header-list-link {
@@ -31,48 +39,65 @@ body {
     color: #03a9f4;
 }
 
-.first-row,
-.second-row,
-.third-row,
-.button-row {
-    max-width: 964px;
-    min-width: 480px;
+.articles,
+.button-sec {
+    width: 904px;
     margin: auto;
 }
 
-.first-column,
-.second-column {
+.articles-item {
     display: inline-block;
     margin: auto;
     width: 420px;
-    padding: 26px 30px 80px;
+    padding-bottom: 140px;
+    padding-right: 60px;
 }
 
-.subject {
+.articles-item:nth-child(2n) {
+    padding-right: 0;
+}
+
+.articles-item:nth-child(n+5) {
+    padding-bottom: 60px;
+}
+
+.articles-item-image {
+    margin-bottom: 30px;
+}
+
+.fix {
+    object-fit: cover;
+    width: 420px;
+    height: 280px;
+}
+
+.articles-item-subject {
     font-family: 'Ubuntu', "Arial", sans-serif;
     color: #b4ad9e;
     line-height: 17px;
     text-transform: uppercase;
+    margin-bottom: 30px;
 }
 
-.title {
+.articles-item-title {
     font-size: 30px;
     line-height: 17px;
     font-weight: 300;
-    padding: 7px 0 16px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.articles-item-text {
+    padding: 0;
     margin: 0;
 }
 
-.text {
-    padding: 22px 0;
-    margin: 0;
+.button-sec {
+    margin-bottom: 70px;
 }
 
-.button-row {
-    margin-bottom: 41px;
-}
-
-.load-more-button {
+.button {
     display: block;
     font-family: "Playfair Display", "Arial", serif;
     width: 150px;
@@ -83,10 +108,4 @@ body {
     background-color: #fff;
     border: 1px solid #626262;
     margin: 0 auto;
-}
-
-.image-fix {
-    object-fit: cover;
-    width: 420px;
-    height: 280px;
 }
