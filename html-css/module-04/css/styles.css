@@ -19,6 +19,7 @@ body {
 img {
     display: block;
     max-width: 100%;
+    object-fit: cover;
 }
 
 .clearfix::after {
@@ -133,6 +134,14 @@ img {
 
 .products-gallery-item:nth-last-child(-n+4) {
     margin-bottom: 0;
+}
+
+.products-gallery-item:hover>.product-chars-frame {
+    background-color: #1abc9c;
+}
+
+.products-gallery-item:hover>.product-chars-frame>.product-chars-price-frame {
+    background-color: #7fd9c7;
 }
 
 .product-chars-frame {
