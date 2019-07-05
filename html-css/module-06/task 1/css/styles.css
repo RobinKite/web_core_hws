@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* outline: 1px solid red; */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: darkslategrey;
+}
+
+.container {
+    height: 825px;
+    position: relative;
+}
+
+.gallery {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1450px;
+    margin: 0 auto;
+}
+
+.gallery-list {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.gallery-item {
+    max-width: 480px;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+.gallery-list li:not(:nth-child(3n)) {
+    margin-right: 5px;
+}
