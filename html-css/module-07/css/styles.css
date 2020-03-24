@@ -1,0 +1,287 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* outline: 1px solid red; */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    color: #777;
+    font-family: 'Roboto Slab', serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+
+/* HEADER */
+
+.header-nav {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.site-logo {
+    text-decoration: none;
+    font-family: "Wisdom Script", cursive;
+    color: #fed136;
+    font-size: 26px;
+}
+
+.header-list {
+    width: 485px;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.header-link {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #222;
+    text-decoration: none;
+    transition: color 0.1s linear;
+}
+
+.header-link:hover {
+    color: #fed136;
+}
+
+
+/* MAIN */
+
+.services {
+    margin-top: 125px;
+    margin-bottom: 120px;
+}
+
+.section-title {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.black,
+.services-item-title {
+    color: #222;
+}
+
+.white {
+    color: #fff;
+}
+
+.section-text {
+    font-family: 'Droid Serif', serif;
+    font-size: 16px;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+.services-list {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    text-align: center;
+}
+
+.services-item {
+    width: 290px;
+}
+
+.services-item::before {
+    content: "";
+    display: flex;
+    margin: 0 auto 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 38px;
+    width: 38px;
+    padding: 14px;
+    border: #fed136 solid 3px;
+    border-radius: 50%;
+}
+
+.icon-basket::before {
+    background-image: url(../img/icons/Icon-Basket.png);
+}
+
+.icon-laptop::before {
+    background-image: url(../img/icons/Icon-Laptop.png);
+}
+
+.icon-lock::before {
+    background-image: url(../img/icons/Icon-Locked.png);
+}
+
+.services-item-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.services-item-description {
+    font-size: 14px;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background-color: #222;
+    background-image: url(../img/map.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    padding-top: 110px;
+    padding-bottom: 115px;
+}
+
+footer .section-title {
+    margin-bottom: 25px;
+}
+
+footer .section-text {
+    margin-bottom: 80px;
+}
+
+footer form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 310px;
+}
+
+footer .contact-input {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 210px;
+}
+
+footer input:not([type="submit"]),
+footer textarea {
+    border: #777 solid 1px;
+    border-radius: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 415px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+footer ::placeholder {
+    color: #bbb;
+}
+
+footer input:not([type="submit"]) {
+    height: 50px;
+}
+
+footer textarea {
+    padding-top: 20px;
+    height: 188px;
+    resize: none;
+}
+
+footer input[type="submit"] {
+    align-self: flex-end;
+    margin: 0 auto;
+    width: 240px;
+    height: 65px;
+    background-color: #fed136;
+    border: 0px;
+    border-radius: 3px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+footer input:required:valid,
+footer textarea:required:valid {
+    outline: 1px solid #0f0;
+}
+
+footer input:required:invalid,
+footer textarea:required:invalid {
+    outline: 1px solid #f00;
+}
+
+
+/* FONTS */
+
+@font-face {
+    font-family: 'Wisdom Script';
+    src: url(../font/Wisdom-Script-AJ.woff) format(woff);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Droid Serif';
+    src: url(../font/DroidSerif-Regular_1.woff) format(woff);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Droid Serif';
+    src: url(../font/DroidSerif-Italic_1.woff) format(woff);
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Droid Serif';
+    src: url(../font/DroidSerif-Bold_1.woff) format(woff);
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Droid Serif';
+    src: url(../font/DroidSerif-BoldItalic_1.woff) format(woff);
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+/* HIDDEN */
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
