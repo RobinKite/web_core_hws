@@ -53,6 +53,7 @@ body {
 }
 
 .list-item {
+    transition: background-color 0.1s linear;
     background-color: #ccc;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -80,13 +81,21 @@ body {
 
 summary {
     cursor: pointer;
+    transition: background-color 0.1s linear;
 }
 
-summary:hover,
+.main:hover .headline {
+    background-color: #eef;
+}
+
+.menu:hover {
+    background-color: #eef;
+}
+
 .list-item:hover {
-    background-color: #dee;
+    background-color: #def;
 }
 
 .list-item .list-item:hover {
-    background-color: #ded;
+    background-color: #dfd;
 }
