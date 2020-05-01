@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* outline: 1px solid red; */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* HEADER */
+
+header {
+    height: 540px;
+    text-align: center;
+    background: no-repeat contain url(../img/wallpaper.png) rgb(26, 25, 21);
+}
+
+header li>a {
+    font-size: 14px;
+}
+
+.header-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+
+/* HIDDEN */
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}

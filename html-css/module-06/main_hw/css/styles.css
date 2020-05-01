@@ -327,18 +327,30 @@ img {
     color: #f38181;
 }
 
+.footer form {
+    margin-left: auto;
+    display: flex;
+}
+
 .footer-email {
+    width: 208px;
     font-style: italic;
     line-height: 24px;
     font-size: 15px;
-    margin-left: auto;
-    padding: 10px 140px 10px 12px;
+    padding: 10px 10px 10px 12px;
     border-top: 1px solid #e5e5e5;
     border-bottom: 1px solid #e5e5e5;
     border-left: 1px solid #e5e5e5;
+    border-right: 0;
+}
+
+.footer-email::placeholder {
+    color: #e5e5e5;
 }
 
 .footer-subscribe {
+    text-transform: uppercase;
+    border: 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     background-color: #95e1d3;

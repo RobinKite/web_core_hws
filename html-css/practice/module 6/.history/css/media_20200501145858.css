@@ -1,0 +1,8 @@
+@media (max-width: 600px) {
+    .banner {
+        display: none;
+    }
+    .features-list-item:not(:last-child) {
+        margin-bottom: 72px;
+    }
+}

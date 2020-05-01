@@ -1,0 +1,48 @@
+@media (max-width: 599px) {
+    .page-header {
+        margin-bottom: 70px;
+    }
+    .page-nav {
+        padding: 10px 0;
+    }
+    .site-logo {
+        margin-bottom: 20px;
+    }
+    .site-logo img {
+        margin: 0 auto;
+    }
+    .site-navigation a {
+        padding: 5px 0;
+        font-size: 24px;
+        line-height: 1;
+        text-align: center;
+    }
+    .banner {
+        display: none;
+    }
+    .features-list-item:not(:last-child) {
+        margin-bottom: 40px;
+    }
+    .team-list-item {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .team-list-item:not(:last-child) {
+        margin-bottom: 40px;
+    }
+}
+
+@media (min-width:600px) {
+    .container {
+        width: 600px;
+    }
+    /* .page-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    } */
+    .site-navigation {
+        display: flex;
+        justify-content: space-between;
+    }
+}
