@@ -1,0 +1,460 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: 1px solid #171523;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+body,
+a {
+    font-family: sans-serif;
+    color: #f4fff8;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    top: 0;
+}
+
+footer {
+    bottom: 0;
+}
+
+header,
+footer {
+    position: fixed;
+    width: 100%;
+    background-color: #;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+/* *** */
+
+.menu {
+    position: relative;
+}
+
+.submenu {
+    padding: 16px;
+    display: none;
+    position: absolute;
+    background-color: #171523;
+}
+
+.menu:hover>.submenu {
+    display: block;
+}
+
+.submenu-item:hover {
+    background-color: rgb(151, 66, 71);
+}
+
+.submenu-item {
+    padding: 4px 8px;
+    white-space: nowrap;
+}
+
+.submenu-item:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+
+/* *** */
+
+.header-nav,
+.footer-nav {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-item>a {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.header-item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.shop-icon {
+    background-image: url(../img/icons/shopping-cart.png);
+}
+
+.home-icon {
+    background-image: url(../img/icons/open-menu.png);
+}
+
+section {
+    height: calc(100vh - 0px);
+    display: flex;
+    align-items: center;
+}
+
+section .container {
+    display: flex;
+}
+
+.first-column,
+.second-column {
+    flex-basis: 50%;
+}
+
+
+/* 
+main {
+    margin-top: 40px;
+    margin-bottom: 40px;
+} */
+
+p,
+a {
+    line-height: 26px;
+    font-size: 15px;
+}
+
+.site-logo,
+.button,
+.shop-cost,
+.shop-details,
+.button a,
+h3,
+h2 {
+    font-family: 'Archivo Black', sans-serif;
+    text-transform: uppercase;
+}
+
+.site-logo {
+    font-size: 30px;
+}
+
+h2 {
+    line-height: 38px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+h2::after {
+    display: block;
+    width: 80px;
+    height: 3px;
+    content: "";
+    background-color: rgb(244, 255, 248);
+    border-radius: 5px;
+}
+
+h3 {
+    line-height: 60px;
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+
+.button {
+    text-align: center;
+    display: block;
+    width: 220px;
+    padding: 6px 0;
+    border: 2px solid #f4fff8;
+    cursor: pointer;
+}
+
+.song-column {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 115px;
+}
+
+.song-column a:active {
+    color: rgb(151, 66, 71);
+}
+
+ol {
+    list-style-type: decimal;
+    margin-left: 18px;
+}
+
+ol li {
+    padding-left: 25px;
+}
+
+.second-page p {
+    width: 90%;
+}
+
+.indicators {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+span {
+    display: flex;
+    align-items: flex-start;
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: 40px;
+    margin-bottom: 35px;
+}
+
+span::before {
+    display: inline-block;
+    margin-right: 16px;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.likes::before {
+    background-image: url(../img/icons/heart.png);
+}
+
+.share::before {
+    background-image: url(../img/icons/share.png);
+}
+
+.shop-cost {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.shop-details {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.shop-details~p {
+    margin-bottom: 25px;
+}
+
+.first-page {
+    background: linear-gradient(-90deg, rgba(151, 66, 71, 0.8), rgba(35, 44, 61, 0.8)), url(../img/1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-attachment: fixed; */
+    background-size: cover;
+}
+
+.second-page {
+    position: relative;
+    z-index: -2;
+    background: linear-gradient(90deg, rgba(151, 66, 71, 0.8), rgba(35, 44, 61, 0.8)), url(../img/2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.second-page::after {
+    position: absolute;
+    content: '';
+    z-index: -1;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(-90deg, rgba(151, 66, 71, 0.4), rgba(35, 44, 61, 1));
+}
+
+.third-page {
+    background: linear-gradient(-90deg, rgba(151, 66, 71, 0.8), rgba(35, 44, 61, 0.8)), url(../img/3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-attachment: fixed; */
+    background-size: cover;
+}
+
+.forth-page {
+    background: linear-gradient(90deg, rgb(151, 66, 71), rgb(35, 44, 61));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.footer-list,
+.footer-list-policy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-list {
+    width: 220px;
+}
+
+.footer-list-policy {
+    width: 360px;
+}
+
+.footer-list a {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.twitter-icon {
+    background-image: url(../img/icons/twitter.png);
+}
+
+.facebook-icon {
+    background-image: url(../img/icons/facebook.png);
+}
+
+.instagram-icon {
+    background-image: url(../img/icons/instagram.png);
+}
+
+.soundcloud-icon {
+    background-image: url(../img/icons/soundcloud.png);
+}
+
+.spotify-icon {
+    background-image: url(../img/icons/spotify-sketch.png);
+}
+
+.youtube-icon {
+    background-image: url(../img/icons/youtube.png);
+}
+
+
+/* *** */
+
+
+/* Position the image container (needed to position the left and right arrows) */
+
+.test {
+    position: relative;
+}
+
+
+/* Hide the images by default */
+
+.mySlides {
+    display: none;
+}
+
+
+/* Add a pointer when hovering over the thumbnail images */
+
+.cursor {
+    cursor: pointer;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: black;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+}
+
+
+/* Container for image text */
+
+.caption-container {
+    text-align: center;
+    padding: 2px 16px;
+    color: black;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Six columns side by side */
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+
+/* Add a transparency effect for thumnbail images */
+
+.demo {
+    opacity: 0.4;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+
+/* *** */

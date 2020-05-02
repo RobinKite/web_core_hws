@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Korshun Olexander">
+    <meta name="date" content="10-02-2020">
+    <link rel="icon" href="./img/icons/favicon.png" sizes="24x24">
+    <script src="scripts/main.js" defer></script>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link href="styles/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+
+    <style>
+        #myVideo {
+            position: absolute;
+            right: 0;
+            bottom: 100px;
+            min-width: 100%;
+            min-height: 100%;
+        }
+    </style>
+
+    <title>The Weeknd</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header-nav container">
+            <a href="#" class="site-logo">The weeknd</a>
+            <ul class="header-list">
+                <li class="header-item">
+                    <a href="#shop" class="header-link shop-icon icon"></a>
+                </li>
+                <li class="header-item menu">
+                    <a href="#" class="header-link home-icon icon"></a>
+                    <ul class="submenu">
+                        <li class="submenu-item">
+                            <button onclick="document.getElementById('id01').style.display='flex'" style="width:auto;">Sign Up</button>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="#new_video">New video</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="#bio">Biography</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="#music">Music</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="#shop">Shop</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="first-page" id="new_video">
+            <div class="container">
+                <div class="first-column">
+
+                    <video loop id="myVideo">
+                        <source src="./media/The Weeknd - Blinding Lights.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+
+                    <button id="myBtn" class="button" onclick="playFunc()">Play</button>
+
+                    <script>
+                        var video = document.getElementById("myVideo");
+                        var btn = document.getElementById("myBtn");
+
+                        function playFunc() {
+                            if (video.paused) {
+                                video.play();
+                                btn.innerHTML = "Pause";
+                            } else {
+                                video.pause();
+                                btn.innerHTML = "Play";
+                            }
+                        }
+                    </script>
+
+                    <h2>New official video</h2>
+                    <h3>Blinding Lights</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="second-page" id="bio">
+            <div class="container">
+                <div class="first-column">
+
+                    <h2>Biography</h2>
+                    <h3>The weeknd</h3>
+                    <p>Abel Makkonen Tesfaye (born February 16, 1990), known professionally as The Weeknd, is a Canadian singer, songwriter, actor and record producer. In 2010, he anonymously uploaded several songs to YouTube under the name "The Weeknd"
+                        and released the mixtapes House of Balloons, Thursday, and Echoes of Silence in 2011 which quickly gained him a following and recognition from several mainstream publications due to his dark wave-style of R&B and the mystique surrounding
+                        his identity.</p><br>
+                    <p>The Weeknd has won three Grammy Awards, two American Music Awards, nine Billboard Music Awards, nine Juno Awards, and has been nominated for an Academy Award. He holds several chart records, being the first artist to simultaneously
+                        hold the top three positions on the Billboard Hot R&B Songs chart with "Can't Feel My Face", "Earned It", and "The Hills", while "The Hills" was certified Diamond by the Recording Industry Association of America (RIAA).</p>
+
+                </div>
+                <div class="second-column">
+                    <h2>Discography</h2>
+                    <ul id="album-list">
+                        <li class="album-item" id="album-item-first">
+                            <p>Released on 10.09.13</p>
+                            <p class="album-name">Kiss Land</p>
+                            <div class="links">
+                                <a href="#" class="itunes">iTunes</a>
+                                <a href="#" class="spotify">Spotify</a>
+                            </div>
+                        </li>
+                        <li class="album-item" id="album-item-second">
+                            <p>Released on 28.08.15</p>
+                            <p class="album-name">Beauty Behind the Madness</p>
+                            <div class="links">
+                                <a href="#" class="itunes">iTunes</a>
+                                <a href="#" class="spotify">Spotify</a>
+                            </div>
+                        </li>
+                        <li class="album-item" id="album-item-third">
+                            <p>Released on 25.11.16</p>
+                            <p class="album-name">Starboy</p>
+                            <div class="links">
+                                <a href="#" class="itunes">iTunes</a>
+                                <a href="#" class="spotify">Spotify</a>
+                            </div>
+                        </li>
+                        <li class="album-item" id="album-item-forth">
+                            <p>Released on 20.03.20</p>
+                            <p class="album-name">After Hours</p>
+                            <div class="links">
+                                <a href="#" class="itunes">iTunes</a>
+                                <a href="#" class="spotify">Spotify</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <button id="slider-left">&#x2190;</button>
+
+                    <button id="slider-right">&#x2192;</button>
+
+
+                </div>
+            </div>
+        </section>
+
+        <section class="third-page" id="music">
+            <div class="container">
+                <div class="first-column">
+
+                    <h2>Music</h2>
+                    <h3 id="album-name">Kiss Land</h3>
+                    <div class="indicators">
+                        <span id="likes" class="likes">356 852</span>
+                        <span class="share">Share</span>
+                    </div>
+                    <div class="track-list">
+                        <ol id="tracklist">
+                            <li><a href="#">Professional</a></li>
+                            <li><a href="#">The Town</a></li>
+                            <li><a href="#">Adaptation</a></li>
+                            <li><a href="#">Love in the sky</a></li>
+                            <li><a href="#">Belong to the World</a></li>
+                            <li><a href="#">Live fore</a></li>
+                            <li><a href="#">Wanderlust</a></li>
+                            <li><a href="#">Kiss Land</a></li>
+                            <li><a href="#">Pretty</a></li>
+                            <li><a href="#">Tears in the Rain</a></li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="second-column">
+                </div>
+            </div>
+        </section>
+
+        <section class="forth-page" id="shop">
+            <div class="container">
+                <div class="first-column">
+                    <h2>Shop</h2>
+
+                    <div class="test">
+                        <div class="item-opened">
+                            <a class="prev" onclick="plusSlides(-1)">❮</a>
+
+                            <div class="mySlides">
+                                <img src="./img/Fashion-adjustable-XO-weeknd-hat.png" width="250px">
+                            </div>
+
+                            <div class="mySlides">
+                                <img src="./img/Fashion-adjustable-XO-weeknd-hat-2.png" width="250px">
+                            </div>
+
+                            <div class="mySlides">
+                                <img src="./img/Fashion-adjustable-XO-weeknd-hat-3.png" width="250px">
+                            </div>
+                            <a class="next" onclick="plusSlides(1)">❯</a>
+
+                        </div>
+
+
+
+                        <div class="row">
+                            <div class="column">
+                                <img class="demo cursor" src="./img/Fashion-adjustable-XO-weeknd-hat.png" onclick="currentSlide(1)" alt="XO Cap">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="./img/Fashion-adjustable-XO-weeknd-hat-2.png" onclick="currentSlide(2)" alt="After Hours Cap">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="./img/Fashion-adjustable-XO-weeknd-hat-3.png" onclick="currentSlide(3)" alt="Starboy Cap">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="second-column">
+                    <p class="shop-cost">$39.9</p>
+                    <div class="caption-container">
+                        <h3 id="caption">Starboy Cap</h3>
+                    </div>
+                    <div class="indicators">
+                        <span class="likes">143 568</span>
+                        <span class="share">Share</span>
+                    </div>
+                    <p class="shop-details">Details</p>
+                    <p>Cap with a different signature (all of the same price)</p>
+                    <div class="button">
+                        <a href="#sign-up" onclick="document.getElementById('id01').style.display='flex'" style="width:auto;">add to cart</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sign-up">
+            <div id="id01" class="modal">
+
+                <form class="modal-content" action="/action_page.php">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <h4>Sign Up</h4>
+                    <p class="modal-line">Please fill in this form to create an account.</p>
+                    <label for="email">Email</label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+
+                    <label for="psw">Password</label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <label for="psw-repeat">Repeat Password</label>
+                    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+                    <label for="remember">Remember me</label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">
+
+                    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+                    <div class="modal-buttons">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                        <button type="submit" class="signupbtn">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <nav class="footer-nav container">
+            <ul class="footer-list-policy">
+                <li><a href="#">&copy;The Weeknd</a></li>
+                <li><a href="#">Terms & conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <a href="#" class="twitter-icon icon"></a>
+                </li>
+                <li>
+                    <a href="#" class="facebook-icon icon"></a>
+                </li>
+                <li>
+                    <a href="#" class="instagram-icon icon"></a>
+                </li>
+                <li>
+                    <a href="#" class="soundcloud-icon icon"></a>
+                </li>
+                <li>
+                    <a href="#" class="spotify-icon icon"></a>
+                </li>
+                <li>
+                    <a href="#" class="youtube-icon icon"></a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>

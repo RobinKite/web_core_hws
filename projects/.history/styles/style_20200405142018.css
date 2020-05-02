@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* outline: 1px solid red; */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+body,
+a {
+    color: #f4fff8;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+section {
+    height: calc(100vh - 90px);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+}
+
+body {
+    background: linear-gradient(-90deg, #974247, #232c3d);
+}
+
+header,
+footer {
+    background-color: #171523;
+}
+
+section,
+header,
+footer {
+    outline: 1px solid #9f919e;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.header-nav {
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+}
+
+.header-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+.header-list a {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.header-item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.shop-icon {
+    background-image: url(../img/icons/shopping-cart.png);
+}
+
+.home-icon {
+    background-image: url(../img/icons/open-menu.png);
+}
+
+main {
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.site-logo,
+h3,
+h2 {
+    font-family: 'Archivo Black', sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.footer-list,
+.footer-list-policy {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-list a {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.footer-list li:not(:last-child),
+.footer-list-policy li:not(:last-child) {
+    margin-right: 20px;
+}
+
+.twitter-icon {
+    background-image: url(../img/icons/twitter.png);
+}
+
+.facebook-icon {
+    background-image: url(../img/icons/facebook.png);
+}
+
+.instagram-icon {
+    background-image: url(../img/icons/instagram.png);
+}
+
+.soundcloud-icon {
+    background-image: url(../img/icons/soundcloud.png);
+}
+
+.spotify-icon {
+    background-image: url(../img/icons/spotify-sketch.png);
+}
+
+.youtube-icon {
+    background-image: url(../img/icons/youtube.png);
+}

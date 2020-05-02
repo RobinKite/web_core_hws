@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Module-08</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
 
@@ -16,24 +16,61 @@
 
 <body>
     <header class="header">
-        <nav class="header-nav">
-            <a href="#" class="site-logo">URLAUBSGLÜCK</a>
+        <div class="container">
+            <nav class="header-nav">
+                <a href="#" class="site-logo">URLAUBSGLÜCK</a>
 
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#" class="nav-link log-in">Log in</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link sign-up">Sign up</a></li>
+                </ul>
+            </nav>
 
-            <ul class="nav-list">
-                <li class="nav-item"><a href="#" class="nav-link log-in">Log in</a></li>
-                <li class="nav-item"><a href="#" class="nav-link sign-up">Sign up</a></li>
-            </ul>
+            <h2 class="header-heading">Share your holiday dreams</h2>
+            <p class="header-text">And find the perfect partner to fullfill it</p>
 
-            <a href="#" class="site-logo logo-mobile">URLAUBSGLÜCK</a>
-        </nav>
-
-        <p class="header-heading">Share your holiday dreams</p>
-        <p class="header-text">And find the perfect partner to fullfill it</p>
-
-        <button class="header-button">Find your holiday partner</button>
-
+            <button class="header-button">Find your holiday partner</button>
+        </div>
     </header>
+
+    <main class="container">
+        <h1 class="visually-hidden">Activebox main page</h1>
+
+        <section class="partners">
+            <h2>Meet a partner for your best holiday</h2>
+            <ul class="partners-list">
+                <li class="partners-item">
+                    <div class="icon-tv">
+                        <img src="./img/partner-1.png" alt="partner" width="120" height="120">
+                    </div>
+                    <p class="partner-name">Bradley Hunter</p>
+                    <p class="partner-desc">Based in Chicago. I love playing tennis and loud music.</p>
+                </li>
+                <li class="partners-item">
+                    <div class="icon-bulb">
+                        <img src="./img/partner-3.png" alt="partner" width="120" height="120">
+                    </div>
+                    <p class="partner-name">Lucas Marsha</p>
+                    <p class="partner-desc">I get my inspiration from nature and objects around me. I have a passion to colours, typography and skateboards.</p>
+                </li>
+                <li class="partners-item">
+                    <div class="icon-cup">
+                        <img src="./img/partner-2.png" alt="partner" width="120" height="120">
+                    </div>
+                    <p class="partner-name">Heather Walker</p>
+                    <p class="partner-desc">I'm a happy person that loves cats and climbing on mountains.</p>
+                </li>
+                <li class="partners-item">
+                    <div class="icon-plane">
+                        <img src="./img/partner-4.png" alt="partner" width="120" height="120">
+                    </div>
+                    <p class="partner-name">Bradley Hunter</p>
+                    <p class="partner-desc">Based in Chicago. I love playing tennis and loud music.</p>
+                </li>
+            </ul>
+            <button class="partners-button">See other partners</button>
+        </section>
+    </main>
 </body>
 
 </html>

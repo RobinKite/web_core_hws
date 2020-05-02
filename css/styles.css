@@ -95,38 +95,46 @@ summary {
     background-color: #eef;
 }
 
-.menu:hover {
-    background-color: #ffd;
-}
-
 .list-item:hover {
-    background-color: #def;
+    background-color: #cef;
 }
 
 .list-item .list-item:hover {
     background-color: #dfd;
 }
 
+.homework:hover {
+    background-color: #ffd;
+}
+
 .practice:hover {
+    background-color: #fed;
+}
+
+.projects:hover {
     background-color: #fdd;
 }
 
-a span {
-    display: none;
-    margin-top: 4px;
-    padding: 1px 5px;
+span {
+    align-self: center;
+    margin-left: 5px;
+    opacity: 0;
+    padding: 2px;
     text-transform: lowercase;
     font-size: 18px;
     line-height: 1;
-    margin-left: 10px;
-    position: absolute;
-    background: #eee;
+    background-color: #fde;
     border: 1px solid #ccc;
     color: #6c6c6c;
+    transition: opacity 0.1s ease;
 }
 
-a:hover span {
-    display: inline;
+.mobile {
+    display: flex;
+}
+
+.mobile:hover span {
+    opacity: 1;
 }
 
 details[open] summary~* {
