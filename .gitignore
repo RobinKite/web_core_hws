@@ -329,5 +329,10 @@ ASALocalRun/
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
 
+<<<<<<< HEAD
 \.history
 .history/*
+=======
+# Ignore any history files made by VSC plugin
+.history/*
+>>>>>>> e5d825357c8c15ad546937be2a990655d8046589
