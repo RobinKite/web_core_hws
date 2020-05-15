@@ -12,8 +12,10 @@
 }
 
 body {
+    line-height: 1;
     color: #222;
     font-size: 25px;
+    font-weight: 300;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -27,9 +29,9 @@ body {
 
 .main {
     background-color: #eee;
-    max-width: 1000px;
+    max-width: 540px;
     margin: 15px auto;
-    padding: 15px;
+    padding: 15px 35px;
 }
 
 .headline,
@@ -39,37 +41,55 @@ body {
 }
 
 .headline {
+    font-family: -apple-system-headline;
+    font-weight: lighter;
     text-align: center;
-    font-size: 50px;
+    font-size: 60px;
     margin: 0;
 }
 
 .menu {
-    margin-top: 50px;
+    padding: 5px;
 }
 
-.menu,
-.task-list {
-    padding: 5px 15px 5px 5px;
+.homework {
+    margin-top: 20px;
+}
+
+.projects,
+.practice {
+    margin-top: 10px;
 }
 
 .list-item {
     transition: background-color 0.3s linear;
     background-color: #ccc;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding-left: 5px;
-    margin-left: 27px;
     list-style: none;
+    margin: 0 16px 8px;
+    padding: 5px;
 }
 
-.list-item .list-item {
+
+/* .list-item .list-item {
+    margin: 0 3px 8px;
     background-color: #bbb;
-}
+} */
 
 .list-item>a {
     color: #222;
     text-decoration: none;
+}
+
+.projects a {
+    text-transform: initial;
+}
+
+.list-item:last-child {
+    margin-bottom: 3px;
+}
+
+summary .sum-headline {
+    margin-right: 20px;
 }
 
 .sum-headline {
@@ -79,16 +99,15 @@ body {
 .sum-headline a {
     text-decoration: none;
     color: inherit;
-    margin-left: 25px;
-}
-
-.list-item .sum-item {
-    padding-left: 0px;
 }
 
 summary {
     cursor: pointer;
-    transition: background-color 0.3s linear;
+    transition: background-color 0.2s linear;
+}
+
+.hw-list {
+    margin-top: 8px;
 }
 
 .main:hover .headline {
@@ -97,10 +116,7 @@ summary {
 
 .list-item:hover {
     background-color: #cef;
-}
-
-.list-item .list-item:hover {
-    background-color: #dfd;
+    outline: 1px dashed;
 }
 
 .homework:hover {
@@ -118,23 +134,51 @@ summary {
 span {
     align-self: center;
     margin-left: 5px;
-    opacity: 0;
+    opacity: 0.5;
     padding: 2px;
     text-transform: lowercase;
     font-size: 18px;
     line-height: 1;
-    background-color: #fde;
-    border: 1px solid #ccc;
+    border: 1px dotted #ccc;
     color: #6c6c6c;
-    transition: opacity 0.1s ease;
+    cursor: default;
+    transition: opacity 0.3s ease;
 }
 
-.mobile {
+.mob {
+    background-color: #dfd;
+}
+
+.js {
+    background-color: #fde;
+}
+
+.pop-up {
     display: flex;
 }
 
-.mobile:hover span {
+.pop-up:hover span {
     opacity: 1;
+}
+
+details summary::-webkit-details-marker {
+    float: right;
+    margin: 10px 10px 0 0;
+    border: 0;
+    padding: 0;
+    color: inherit;
+    opacity: 0.7;
+    font-size: 12px;
+    /* position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden; */
 }
 
 details[open] summary~* {
@@ -144,10 +188,20 @@ details[open] summary~* {
 @keyframes sweep {
     0% {
         opacity: 0;
-        margin-left: -20px
+        margin-left: -10px
     }
     100% {
         opacity: 1;
         margin-left: 0px
+    }
+}
+
+@media (max-width:520px) {
+    .headline {
+        font-size: 50px;
+    }
+    span {
+        display: none;
+        visibility: hidden;
     }
 }

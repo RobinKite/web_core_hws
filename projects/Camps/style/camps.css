@@ -1,0 +1,83 @@
+.image {
+	position		:relative;
+	width			:100%;	
+}
+
+.div {
+	top				:0;
+	left			:13%;
+	right			:13%;
+	background-color:rgba(0, 0, 0, 0.8);
+	border-radius	:0 0 15px 15px;
+	width			:70%;
+}
+
+
+#button {
+	width			:34%;
+	left			:33%;
+	right			:33%;
+	border-radius	:15px;
+}
+
+html, body {
+	height			:100%;
+	margin			:0px;
+	margin-top		:0.5%;
+	padding			:0px;
+	background-color:rgb(12,7,11);
+}
+
+table {
+	border			:0px;
+	margin			:auto;
+	width			:80%;
+}
+
+td{
+	vertical-align	:top;
+	position		:relative;
+	text-align		:center;	
+}
+
+button {
+	transition		:0.5s;
+	
+	position		:absolute;
+	top				:80%;
+	left			:0;
+	width			:24%;
+	
+	background-color:rgb(0, 0, 0);	/*if next won't work*/
+	background-color:rgba(0, 0, 0, 0.7);
+	border			:0;
+	padding			:10px;
+	color			:white;
+	border-radius	:0 15px 15px 0;
+	font-size		:100%;
+	font-family		:sans-serif;
+}
+
+div {	
+	position		:absolute;
+	top				:80%;
+	right			:0;
+	width			:18%;
+	
+	background-color:rgb(0, 0, 0);	/*if next won't work*/
+	background-color:rgba(0, 0, 0, 0.7);
+	border			:0;
+	padding			:10px;
+	color			:white;
+	border-radius	:15px 0 0 15px;
+	font-size		:100%;
+	font-family		:sans-serif;
+}
+
+button:hover {
+	background-color: rgba(106,0,232, 0.8)
+}
+
+button:active {
+	transform: scale(0.9);
+}
