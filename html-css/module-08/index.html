@@ -26,10 +26,12 @@
                 </ul>
             </nav>
 
-            <h2 class="header-heading">Share your holiday dreams</h2>
-            <p class="header-text">And find the perfect partner to fullfill it</p>
+            <div class="header-text-container">
+                <h2 class="header-heading">Share your holiday dreams</h2>
+                <p class="header-text">And find the perfect partner to fullfill it</p>
 
-            <button class="header-button">Find your holiday partner</button>
+                <button class="header-button">Find your holiday partner</button>
+            </div>
         </div>
     </header>
 
@@ -46,13 +48,7 @@
                     <p class="partner-name">Bradley Hunter</p>
                     <p class="partner-desc">Based in Chicago. I love playing tennis and loud music.</p>
                 </li>
-                <li class="partners-item">
-                    <div class="icon-bulb">
-                        <img src="./img/partner-3.png" alt="partner" width="120" height="120">
-                    </div>
-                    <p class="partner-name">Lucas Marsha</p>
-                    <p class="partner-desc">I get my inspiration from nature and objects around me. I have a passion to colours, typography and skateboards.</p>
-                </li>
+
                 <li class="partners-item">
                     <div class="icon-cup">
                         <img src="./img/partner-2.png" alt="partner" width="120" height="120">
@@ -61,6 +57,14 @@
                     <p class="partner-desc">I'm a happy person that loves cats and climbing on mountains.</p>
                 </li>
                 <li class="partners-item">
+                    <div class="icon-bulb">
+                        <img src="./img/partner-3.png" alt="partner" width="120" height="120">
+                    </div>
+                    <p class="partner-name">Lucas Marsha</p>
+                    <p class="partner-desc">I get my inspiration from nature and objects around me. I have a passion to colours, typography and skateboards.</p>
+                </li>
+
+                <li class="partners-item">
                     <div class="icon-plane">
                         <img src="./img/partner-4.png" alt="partner" width="120" height="120">
                     </div>
@@ -68,9 +72,37 @@
                     <p class="partner-desc">Based in Chicago. I love playing tennis and loud music.</p>
                 </li>
             </ul>
+
             <button class="partners-button">See other partners</button>
         </section>
     </main>
+
+    <button id="btn" class="outline-button" onclick="isEnabled()">&#10003</button>
+
+    <script>
+        let enabled = true;
+
+        function isEnabled() {
+            let style = document.createElement('style');
+            let hs = document.getElementsByTagName('style');
+            let btn = document.getElementById("btn");
+
+            if (enabled == true) {
+                style.innerHTML = `*{outline: 1px solid red;}`;
+                document.head.appendChild(style);
+                btn.innerHTML = "&#10007";
+
+                enabled = false;
+            } else {
+                for (var i = 0, max = hs.length; i < max; i++) {
+                    hs[i].parentNode.removeChild(hs[i]);
+                }
+                btn.innerHTML = "&#10003";
+
+                enabled = true;
+            }
+        }
+    </script>
 </body>
 
 </html>
