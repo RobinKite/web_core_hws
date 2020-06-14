@@ -4,72 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        /* ! MODAL */
-        
-        .task {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            width: 160px;
-            text-align: center;
-            padding: 10px 5px;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-size: 35px;
-            line-height: 1;
-            font-weight: lighter;
-            border: 1px solid #666;
-            border-radius: 5px;
-            background-color: #eee;
-        }
-        
-        .task:hover {
-            width: 500px;
-            background-color: #ddd;
-            cursor: default;
-        }
-        
-        .modal {
-            visibility: visible;
-            text-align: left;
-            top: 56px;
-            position: absolute;
-            background-color: #eee;
-        }
-        
-        .task:hover .modal,
-        .modal:hover {
-            visibility: visible;
-            width: 98%;
-        }
-        
-        .modal-numb {
-            text-align: center;
-        }
-        
-        .modal a {
-            text-decoration: none;
-            color: inherit;
-        }
-        
-        .modal p {
-            margin: 0;
-            padding: 0;
-        }
-    </style>
+    <title>Test</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-
-    <div class="task">Check task
-        <div class="modal">
-            <p class="modal-numb">Module 1</p>
-            <p>Layout</p>
-            <a href="#">Layout download</a>
-            <p>Task</p>
-            <p class="task-text">The task was simple - to try to code with html</p>
-        </div>
+    <div class="task-block">
+        <p class="task-mod" id="modNum">Module 1</p>
+        <p class="task-name">Task</p>
+        <p class="task-desc" id="taskDesc">The task was simply to train html skills.</p>
+        <p class="task-lyt">Layout</p>
+        <a href="#" class="task-link" id="lytLink">Download</a>
     </div>
 </body>
 

@@ -1,0 +1,13 @@
+    .font-default {
+        --font-family: 'Montserrat', sans-serif;
+        --font-family-add: 'Cormorant Unicase', serif;
+        --font-main-weight: 300;
+        --font-add-weight: 700;
+    }
+    
+    .font-different {
+        --font-family: 'Cormorant Garamond', serif;
+        --font-family-add: 'Balsamiq Sans', cursive;
+        --font-main-weight: 400;
+        --font-add-weight: 700;
+    }

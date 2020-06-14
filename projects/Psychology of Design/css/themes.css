@@ -1,0 +1,105 @@
+/*
+.theme-template {
+    --font-color: ;
+    --font-opposing: ;
+    --font-additional: ;
+    --color-opposing: ;
+    --color-primary: ;
+    --color-secondary: ;
+    --color-additional: ;
+    --color-accent: ;
+    --color-hover: rgba(255, 255, 255, 0.6);
+}
+ */
+
+.template {
+    /*? Stroke */
+    --font-color: #fff;
+    /*? Headline */
+    --font-opposing: #000;
+    /*? Paragraph */
+    --font-additional: #fff;
+    /*? Background */
+    --color-opposing: #fff;
+    /*? Main */
+    --color-primary: #000;
+    /*? Highlight */
+    --color-secondary: #fff;
+    /*? Secondary */
+    --color-additional: #000;
+    /*? Tertiary */
+    --color-accent: #fff;
+    --color-hover: rgba(255, 255, 255, 0.6);
+}
+
+.theme-first {
+    --font-color: #001858;
+    --font-opposing: #001858;
+    --font-additional: #172c66;
+    --color-opposing: #fef6e4;
+    --color-primary: #f3d2c1;
+    --color-secondary: #fef6e4;
+    --color-additional: #8bd3dd;
+    --color-accent: #f582ae;
+    --color-hover: rgba(255, 255, 255, 0.6);
+}
+
+.theme-second {
+    --font-color: #33272a;
+    --font-opposing: #33272a;
+    --font-additional: #594a4e;
+    --color-opposing: #fffffe;
+    --color-primary: #faeee7;
+    --color-secondary: #ff8ba7;
+    --color-additional: #ffc6c7;
+    --color-accent: #c3f0ca;
+    --color-hover: rgba(255, 255, 255, 0.6);
+}
+
+.theme-third {
+    --font-color: #272343;
+    --font-opposing: #272343;
+    --font-additional: #2d334a;
+    --color-opposing: #fffffe;
+    --color-primary: #fffbe7;
+    --color-secondary: #ffd803;
+    --color-additional: #e3f6f5;
+    --color-accent: #bae8e8;
+    --color-hover: rgba(255, 255, 255, 0.6);
+}
+
+.theme-forth {
+    --font-color: #fffffe;
+    --font-opposing: #121629;
+    --font-additional: #121629;
+    --color-opposing: #b8c1ec;
+    --color-primary: #eebbc3;
+    --color-secondary: #b8c1ec;
+    --color-additional: #232946;
+    --color-accent: #feffff;
+    --color-hover: rgba(255, 255, 255, 0.6);
+}
+
+.theme-fifth {
+    --font-color: #020826;
+    --font-opposing: #020826;
+    --font-additional: #716040;
+    --color-opposing: #fffffe;
+    --color-primary: #eaddcf;
+    --color-secondary: #8c7851;
+    --color-additional: #f9f4ef;
+    --color-accent: #f25042;
+    --color-hover: rgba(255, 255, 255, 0.6);
+}
+
+.theme-sixth {
+    --font-color: #181818;
+    --font-opposing: #181818;
+    --font-additional: #2e2e2e;
+    --color-opposing: #fffffe;
+    --color-primary: #f2eef5;
+    --color-secondary: #4fc4cf;
+    --color-additional: #fbdd74;
+    --color-accent: #994ff3;
+    --color-hover: rgba(255, 255, 255, 0.6);
+}

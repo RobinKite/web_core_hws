@@ -54,28 +54,6 @@ function sliderRight() {
 
 }
 
-// function sliderRight() {
-//     for (var i = 4; i >= 0; i--) {
-//         order = order - 1;
-//         if (order <= 0) {
-//             order = 4
-//         }
-//         album_item[i - 1].style.order = order;
-//         console.log(order);
-
-//         if (album_item[i - 1].style.order == 1) {
-//             album_item[i - 1].style.opacity = 1;
-//             album_num = i - 1;
-//             removeLi();
-//             trackAdd();
-//         } else {
-//             album_item[i - 1].style.opacity = 0.5;
-//         }
-//     }
-
-// }
-
-
 function trackAdd() {
 
     if (album_num == 0) {

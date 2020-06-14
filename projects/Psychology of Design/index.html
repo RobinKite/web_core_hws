@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" class="template font-default">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/themes.css">
+    <script type="text/javascript" src="./javascript/main.js"></script>
+    <title>Psychology of design</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <svg id="logo-svg" xmlns="http://www.w3.org/2000/svg" width="105px" height="146px">
+                    <defs/>
+                    <path id="logo-shape" transform="scale(-1, 1) translate(-105,0)" fill-rule="evenodd" d="M65.810,-0.000 C70.798,2.515 73.896,7.273 77.641,11.061 C81.018,14.477 85.286,18.972 87.253,23.596 C92.745,36.506 86.971,48.180 81.338,56.040 C70.780,70.773 52.475,83.693 45.106,100.283 C42.554,106.027 38.585,116.282 40.669,125.354 C41.327,128.217 44.151,132.400 43.627,135.677 C43.047,139.295 40.574,142.831 39.190,146.000 C38.944,146.000 38.697,146.000 38.451,146.000 C35.865,129.130 27.448,111.673 35.493,92.909 C43.059,75.262 62.398,67.052 68.768,47.929 C74.301,31.317 66.965,14.775 65.810,-0.000 ZM100.563,28.020 C106.403,34.348 105.983,53.198 102.042,61.202 C91.879,81.847 72.200,92.445 59.155,109.869 C54.426,116.186 51.674,124.325 46.584,130.515 C46.584,130.269 46.584,130.024 46.584,129.778 C39.012,120.699 47.403,102.819 51.761,95.859 C66.476,72.350 100.099,65.465 100.563,28.020 ZM-0.000,73.737 C0.246,72.508 0.493,71.279 0.739,70.050 C14.508,63.239 29.070,63.410 50.282,63.414 C50.282,63.660 50.282,63.906 50.282,64.152 C41.079,70.302 33.337,80.733 29.577,92.172 C27.944,97.140 29.325,104.997 26.620,109.131 C26.342,93.704 15.893,73.757 -0.000,73.737 Z"/>
+                  </svg>
+
+                <a href="#" class="logo-text" onclick="enableTheme('template')">Psychology of Design</a>
+            </div>
+            <a href="#" class="change-button" onclick="changeFont()">
+                <span>Change</span> Font
+            </a>
+        </nav>
+        <div id="trapezoid"></div>
+    </header>
+
+    <main class="container">
+        <div class="side-menu">
+            <p class="side-text">choose <span>theme</span></p>
+            <div class="theme first">
+                <div class="theme-hover" onclick="enableTheme('theme-first')">pick theme</div>
+            </div>
+            <div class="theme second">
+                <div class="theme-hover" onclick="enableTheme('theme-second')">pick theme</div>
+            </div>
+            <div class="theme third">
+                <div class="theme-hover" onclick="enableTheme('theme-third')">pick theme</div>
+            </div>
+            <div class="theme forth">
+                <div class="theme-hover" onclick="enableTheme('theme-forth')">pick theme</div>
+            </div>
+            <div class="theme fifth">
+                <div class="theme-hover" onclick="enableTheme('theme-fifth')">pick theme</div>
+            </div>
+            <div class="theme sixth">
+                <div class="theme-hover" onclick="enableTheme('theme-sixth')">pick theme</div>
+            </div>
+        </div>
+
+        <div class="color-desc">
+            <ul class="colors-list" id="colorList">
+                <li class="colors-item">
+                    <h2 class="colorName">Black</h2>
+                    <p class="colorHash">#000000</p>
+                    <div class="black"></div>
+                    <p class="colorDesc">The color of power and grandeur can often be found in the luxury theme. A trivial and controversial color, symbolizing intimacy, secrecy, reducing concentration with prolonged exposure, emphasizes brand solidity. It is considered a
+                        classic color. In many cultures, black is the color of mourning and is associated with longing and depression. In America it symbolizes caution, and in China - honesty.</p>
+                </li>
+                <li class="colors-item">
+                    <h2 class="colorName">White</h2>
+                    <p class="colorHash">#ffffff</p>
+                    <div class="white"></div>
+                    <p class="colorDesc">The color of freshness and purity, bright emotions and openness, inspires confidence. It is often used as a background design. Symbolizes the height of the brand, is also considered a classic. On the negative side, it reminds of sterility,
+                        emptiness, alienation.</p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- <div class="main-content">
+            <ul class="wrong-col">
+                Wrong
+                <li class="col-item">
+                    <div class="f-exmpl">
+                        <p class="photo-desc">Photo description</p>
+                        <div class="photo-template"></div>
+                        <p class="photo-desc">Photo description</p>
+                        <div class="photo-template"></div>
+                        <p class="photo-desc">Photo description</p>
+                        <div class="photo-template"></div>
+                        <p class="photo-desc">Photo description</p>
+
+                    </div>
+                </li>
+            </ul>
+            <ul class="right-col">
+                Right
+                <li class="col-item">
+                    <div class="f-exmpl">
+                        <p class="photo-desc">Photo description</p>
+
+                        <div class="photo-template"></div>
+                        <p class="photo-desc">Photo description</p>
+                        <div class="photo-template"></div>
+                        <p class="photo-desc">Photo description</p>
+                        <div class="photo-template"></div>
+                        <p class="photo-desc">Photo description</p>
+                    </div>
+                </li>
+            </ul>
+        </div> -->
+
+    </main>
+
+</body>
+
+</html>
