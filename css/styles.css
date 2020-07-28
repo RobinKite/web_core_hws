@@ -80,6 +80,10 @@ body {
     text-decoration: none;
 }
 
+.list-item>p {
+    cursor: pointer;
+}
+
 .projects a {
     text-transform: initial;
 }
@@ -153,6 +157,14 @@ span {
     background-color: #fde;
 }
 
+.ud {
+    background-color: #eee;
+}
+
+.bem {
+    background-color: #eff;
+}
+
 .pop-up {
     display: flex;
 }
@@ -169,39 +181,4 @@ details summary::-webkit-details-marker {
     color: inherit;
     opacity: 0.7;
     font-size: 12px;
-    /* position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden; */
-}
-
-details[open] summary~* {
-    animation: sweep .3s ease-out;
-}
-
-@keyframes sweep {
-    0% {
-        opacity: 0;
-        margin-left: -10px
-    }
-    100% {
-        opacity: 1;
-        margin-left: 0px
-    }
-}
-
-@media (max-width:520px) {
-    .headline {
-        font-size: 50px;
-    }
-    span {
-        display: none;
-        visibility: hidden;
-    }
 }

@@ -331,8 +331,12 @@ ASALocalRun/
 
 <<<<<<< HEAD
 \.history
-.history/*
+
 =======
 # Ignore any history files made by VSC plugin
 .history/*
 >>>>>>> e5d825357c8c15ad546937be2a990655d8046589
+
+\.practice
+html-css/.practice/*
+

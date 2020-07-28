@@ -1,0 +1,62 @@
+link
+
+page-header
+
+page-nav
+
+container
+
+site-logo
+
+site-navigation
+    site-navigation__item
+    site-navigation__link
+
+welcome
+    welcome__title
+    welcome__text
+    welcome__button
+
+section
+    section__title
+        section__title-italic
+        section__title-bold
+
+services
+    services__list
+    services__icon
+        services__icon--photo
+        services__icon--graph
+        services__icon--comp
+        services__icon--book
+        services__icon--home
+        services__icon--frame
+
+services-card
+    services-card__title
+    services-card__content
+
+team
+    team__text
+    team__list
+
+team-card
+    team-card__background
+    team-card__photo
+    team-card__photo-image
+    team-card__name
+    team-card__occupation
+
+socials
+    socials__item
+    socials__link
+
+page-footer
+    page-footer__copyright
+    page-footer__copyright-owner
+    page-footer__form
+    page-footer__form-email
+    page-footer__form-subscription
+    
+
+
