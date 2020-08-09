@@ -12,74 +12,131 @@
 </head>
 
 <body>
-    <main class="main">
 
-        <h1 class="headline">Homework</h1>
-        <div class="menu homework">
-            <details open>
-                <summary class="sum-headline">My homework</summary>
-                <ul class="hw-list">
-                    <li class="list-item">
-                        <a href="html-css/module-01/index.html">Module 1-2</a>
-                    </li>
-                    <li id="third-module" class="list-item">
-                        <a href="html-css/module-03/index.html">Module 3</a>
-                    </li>
-                    <li id="forth-module" class="list-item">
-                        <a href="html-css/module-04/index.html">Module 4</a>
-                    </li>
-                    <li id="fifth-module" class="list-item">
-                        <a href="html-css/module-05/main_hw/index.html">Module 5</a>
-                    </li>
-                    <li id="sixth-module" class="list-item">
-                        <a href="html-css/module-06/main_hw/index.html">Module 6</a>
-                    </li>
-                    <li id="seventh-module" class="list-item">
-                        <a href="html-css/module-07/index.html">Module 7</a>
-                    </li>
-                    <li id="eighth-module" class="list-item pop-up">
-                        <a href="html-css/module-08/index.html">Module 8</a>
-                        <span class="mob">mobile and tablet user friendly</span>
-                    </li>
-                    <li id="ninth-module" class="list-item pop-up">
-                        <!-- <a href="html-css/module-09/index.html">Module 9</a> -->
-                        <p id="ninth-module">Module 9</p>
-                        <span class="ud">under development</span>
-                    </li>
-                    <li id="tenth-module" class="list-item pop-up">
-                        <a href="html-css/module-10/index.html">Module 10</a>
-                        <span class="bem">BEM ready</span>
-                    </li>
-                </ul>
-            </details>
-        </div>
-        <!-- <div class="menu practice">
+    <main class="container">
+
+        <h1 class="visually-hidden">Page main title</h1>
+
+        <section class="sect">
+            <h2 class="sect__title">Homework</h2>
+
+            <ul class="list sect__list">
+                <li class="sect__item">
+                    <a class="link sect__link" href="html-css/module-01/index.html">Module 1-2
+                    
+                        <span class="sect__pop-up">The first steps to understanding html basics and working with Git</span>
+                        
+                    </a>
+
+                </li>
+                <li class="sect__item">
+                    <a class="link sect__link" href="html-css/module-03/index.html">Module 3
+                    
+                        <span class="sect__pop-up">The first steps to learning css technology</span>
+
+                    </a>
+                </li>
+                <li class="sect__item">
+                    <a class="link sect__link" href="html-css/module-04/index.html">Module 4
+                    
+                        <span class="sect__pop-up">Testing 'float' arrangement of blocks on the grid, learning css color teory and pseudo elements</span>
+
+                    </a>
+                </li>
+                <li class="sect__item">
+                    <a class="link sect__link" href="html-css/module-05/main_hw/index.html">Module 5
+                    
+                        <span class="sect__pop-up">Studying HTML5 standarts and css positioning of elements (relative, absolute etc.)</span>
+                    
+                    </a>
+                </li>
+                <li class="sect__item">
+                    <a class="link sect__link" href="html-css/module-06/main_hw/index.html">Module 6
+                    
+                        <span class="sect__pop-up">Trying out flexbox, also css shadows, transformation, transition and animation</span>
+                    
+                    </a>
+                </li>
+                <li class="sect__item">
+                    <a class="link sect__link" href="html-css/module-07/index.html">Module 7
+                    
+                        <span class="sect__pop-up">Exploring for myself fonts types and using local font connection, creating first form and learning tables</span>
+                    
+                    </a>
+                </li>
+                <li class="sect__item">
+                    <a class="link sect__link" href="html-css/module-08/index.html">Module 8
+                    
+                        <span class="sect__pop-up">Introduction to responsive and adaptive web design, mobile- and desktop-first css</span>
+                    
+                    </a>
+                </li>
+                <li class="sect__item">
+                    <!-- !It is under development, half-ready-->
+                    <!-- <a class="link sect__link" href="html-css/module-09/index.html">Module 9</a> -->
+                    <p class="sect__link--undone">Module 9
+
+                        <span class="sect__pop-up">Reading about css grid and css frameworks, testing bootstrap 4</span>
+
+                    </p>
+                </li>
+                <li class="sect__item">
+                    <a class="link sect__link" href="html-css/module-10/index.html">Module 10
+                    
+                        <span class="sect__pop-up">Cross-browser fundamentals and solving 'problem' with retina screens, working with SVG and trying out BEM methodology</span>
+                    
+                    </a>
+                </li>
+                <li class="sect__item">
+                    <!-- !It is not ready-->
+                    <!-- <a class="link sect__link" href="html-css/module-11/index.html">Module 11</a> -->
+                    <p class="sect__link--undone">Module 11
+
+                        <span class="sect__pop-up">Going to look at SASS and doing more stuff</span>
+
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="sect">
+            <h2 class="sect__title">Personal Projects</h2>
+
+            <ul class="list sect__list">
+                <li class="sect__item">
+                    <a class="link sect__link" href="./projects/Camps/index.html">Test timer
+                    
+                        <span class="sect__pop-up">First ever pre-studying timer test-project</span>
+                    
+                    </a>
+                </li>
+                <li class="sect__item">
+                    <a class="link sect__link" href="./projects/The Weeknd/index.html">The Weeknd
+                    
+                        <span class="sect__pop-up">High school project relating to famous singer Weeknd</span>
+                    
+                    </a>
+                </li>
+                <li class="sect__item">
+                    <a class="link sect__link" href="./projects/Psychology of Design/index.html">Psychology of Design
+                    
+                        <span class="sect__pop-up">Diploma research on psychology meaning of colors, font types and blocks positioning in design</span>
+                    
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+
+    </main>
+
+
+    <!-- <div class="menu practice">
             <div class="sum-headline pop-up">
-                <a href="html-css/practice/index.html">Practice</a>
+                <a class="link sect__link" href="html-css/practice/index.html">Practice</a>
                 <span class="mob">mobile and tablet user friendly</span>
             </div>
         </div> -->
-        <div class="menu projects">
-            <div class="sum-headline">
-                <details open>
-                    <summary class="sum-headline">My projects</summary>
-                    <ul class="hw-list">
-                        <li class="list-item pop-up">
-                            <a href="./projects/The Weeknd/index.html" href="#">The Weeknd</a>
-                            <span class="js">javascript</span>
-                        </li>
-                        <li class="list-item pop-up">
-                            <a href="./projects/Camps/index.html" href="#">Camps (LoL timer)</a>
-                            <span class="js">javascript</span>
-                        </li>
-                        <li class="list-item pop-up">
-                            <a href="./projects/Psychology of Design/index.html" href="#">Psychology of Design</a>
-                            <span class="js">javascript</span>
-                        </li>
-
-                </details>
-            </div>
-        </div>
 
 
     </main>
