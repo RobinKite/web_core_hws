@@ -1,0 +1,50 @@
+.game-rules {
+    max-width: fit-content;
+    display: grid;
+    gap: 0.5rem;
+}
+
+.game-rules.easy {
+    grid-template-rows: 2.55rem repeat(3, var( --main-width));
+}
+
+.game-rules.medium {
+    grid-template-rows: 2.55rem repeat(4, var( --main-width));
+}
+
+.game-rules.hard {
+    grid-template-rows: 2.55rem repeat(5, var( --main-width));
+}
+
+.game-rules .row {
+    display: grid;
+    gap: 0.1rem;
+}
+
+.game-rules.easy .row {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.game-rules.medium .row {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.game-rules.hard .row {
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.game-rules .rule {
+    width: var(--main-width);
+    height: var(--main-width);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0.05rem solid var(--color-text);
+}
+
+.game-rules-hor {
+    display: grid;
+}
+
+.clue {
+    display: flex;
+}

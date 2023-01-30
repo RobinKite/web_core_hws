@@ -1,0 +1,210 @@
+@import "../style/game-window.css";
+@import "../style/game-rules.css";
+@import "../style/characters.css";
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+:root {
+    --main-width: 2rem;
+    --main-gap: 0.3rem;
+    --add-gap: 0.2rem;
+    --easy-width-coef: calc(var(--main-width) / 2);
+    --medium-width-coef: calc(var(--easy-width-coef) / 2);
+    --color-background: #f2fff2;
+    --color-accent: #add9bc;
+    --color-accent-dark: #5b8c7c;
+    --color-text: #0d1a1a;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 25px;
+    font-family: 'VT323', monospace;
+    line-height: 1;
+    /* border-radius: 0.1rem; */
+    /* outline: 1px solid red; */
+    color: var(--color-text);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    position: relative;
+    min-width: fit-content;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll;
+    background-color: var(--color-text);
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    background: linear-gradient(90deg, rgba(91, 140, 124, 0.9) 0%, rgba(91, 140, 124, 0.6) 100%);
+    border: 0.2rem solid var(--color-accent-dark);
+    margin: 0.7rem 0.7rem 0 0.7rem;
+}
+
+.header p,
+.header div {
+    font-size: 1.3rem;
+    color: var(--color-text);
+}
+
+.container {
+    min-width: max-content;
+    margin: 0 0.7rem 0.5rem 0.7rem;
+    display: flex;
+    justify-content: center;
+    border: 0.2rem solid var(--color-accent-dark);
+    border-top: none;
+    background: radial-gradient(circle, transparent 20%, #add9bc 20%, #add9bc 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #add9bc 20%, #add9bc 80%, transparent 80%, transparent) 50px 50px, linear-gradient(#5b8c7c 8px, transparent 8px) 0 -4px, linear-gradient(90deg, #5b8c7c 8px, transparent 8px) -4px 0;
+    background-color: var(--color-accent);
+    background-size: 10px 10px, 10px 00px, 5px 5px, 50px 50px;
+    transition: opacity 300ms ease-in-out;
+}
+
+.blackout {
+    opacity: 0.1;
+    transition: opacity 300ms ease-in-out;
+}
+
+.congratulations-window {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    padding: 0.5rem;
+    background-color: var(--color-accent-dark);
+    /* border: 0.7rem solid var(--color-text); */
+}
+
+.congratulations-window.visible {
+    display: block;
+}
+
+.congratulations-window>p {
+    text-align: center;
+    background-color: var(--color-background);
+    padding: 0.2rem 0.5rem;
+    border-left: 0.2rem solid var(--color-text);
+    border-right: 0.2rem solid var(--color-accent);
+    /* text-align: center; */
+}
+
+.congratulations-window>p:first-child {
+    border-left: 0.2rem solid var(--color-text);
+    border-top: 0.2rem solid var(--color-text);
+    border-right: 0.2rem solid var(--color-accent);
+}
+
+.congratulations-window>p:last-child {
+    border-left: 0.2rem solid var(--color-text);
+    border-bottom: 0.2rem solid var(--color-accent);
+    border-right: 0.2rem solid var(--color-accent);
+}
+
+.container section {
+    margin: 0.5rem 0;
+    padding: 0.3rem 1rem 0.5rem;
+    background-color: var(--color-accent);
+    outline: 0.1rem solid var(--color-accent-dark);
+}
+
+section>p {
+    font-size: 2rem;
+    font-family: 'Abril Fatface', cursive;
+    text-align: center;
+    color: var(--color-text);
+}
+
+section>p::after {
+    content: '';
+    display: block;
+    margin: 0.2rem auto 0.3rem;
+    width: 95%;
+    height: 0.05rem;
+    background-color: var(--color-text);
+}
+
+
+/* DIFFICULTY BUTTONS */
+
+.difficulty,
+.timer {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#timer {
+    border-left: 0.2rem solid var(--color-text);
+    border-top: 0.2rem solid var(--color-text);
+    border-right: 0.2rem solid var(--color-accent);
+    border-bottom: 0.2rem solid var(--color-accent);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    padding: 0.3rem;
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+button {
+    font-size: 1.5rem;
+    display: inline-block;
+    padding: 0.3rem 0.5rem;
+    margin: 0;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: background 150ms ease-in-out, transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    color: var(--color-text);
+    border: none;
+    border-left: 0.2rem solid var(--color-background);
+    border-bottom: 0.2rem solid var(--color-text);
+    background-color: var(--color-accent);
+}
+
+button:hover,
+button:focus {
+    color: var(--color-background);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}

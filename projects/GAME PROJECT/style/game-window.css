@@ -1,0 +1,114 @@
+.hidden {
+    /* display: none; */
+    cursor: initial!important;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+}
+
+
+/* DEFAULTS */
+
+.game-window {
+    max-width: fit-content;
+    display: grid;
+    gap: 0.5rem;
+}
+
+.game-window .row {
+    display: grid;
+    gap: 1rem;
+}
+
+.game-window .box {
+    position: relative;
+    grid-template-rows: repeat(2, 1fr);
+    display: grid;
+    gap: 0.2rem;
+    background-color: var(--color-accent);
+}
+
+.game-window .option {
+    width: var(--main-width);
+    height: var(--main-width);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    transition: opacity 150ms ease-in-out;
+    border: 0.05rem solid var(--color-text);
+}
+
+.game-window .option:hover {
+    filter: brightness(75%);
+    transform: scale(0.95);
+    transition: filter 150ms ease-in-out, transform 150ms ease;
+}
+
+.game-window .last-option {
+    width: calc(var(--main-width) * 2 + var(--main-gap));
+    height: calc(var(--main-width) * 2 + var(--main-gap));
+    cursor: initial!important;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 150ms ease-in-out, height 150ms ease-in-out;
+}
+
+.game-window .last-option:hover {
+    filter: none;
+    transform: translate(-50%, -50%) scale(1);
+    transition: width 150ms ease-in-out, height 150ms ease-in-out, transform 150ms ease;
+}
+
+
+/* EASY LEVEL */
+
+.easy .row {
+    grid-template-columns: repeat(4, 1fr)!important;
+}
+
+.easy .box {
+    grid-template-columns: repeat(2, 1fr)!important;
+}
+
+.easy .option {
+    width: calc(var(--main-width) + var(--easy-width-coef));
+    height: calc(var(--main-width) + var(--easy-width-coef));
+}
+
+.easy .last-option {
+    width: calc((var(--main-width) + var(--easy-width-coef)) * 2 + var(--main-gap));
+    height: calc((var(--main-width) + var(--easy-width-coef)) * 2 + var(--main-gap));
+}
+
+
+/* MEDIUM LEVEL */
+
+.medium .row {
+    grid-template-columns: repeat(5, 1fr)!important;
+}
+
+.medium .box {
+    grid-template-columns: repeat(3, 1fr)!important;
+}
+
+.medium .option {
+    width: calc(var(--main-width) + var(--medium-width-coef));
+    height: calc(var(--main-width) + var(--medium-width-coef));
+}
+
+.medium .last-option {
+    width: calc((var(--main-width) + var(--medium-width-coef)) * 2 + var(--main-gap));
+    height: calc((var(--main-width) + var(--medium-width-coef)) * 2 + var(--main-gap));
+}
+
+
+/* HARD LEVEL */
+
+.hard .row {
+    grid-template-columns: repeat(6, 1fr)!important;
+}
+
+.hard .box {
+    grid-template-columns: repeat(3, 1fr)!important;
+}

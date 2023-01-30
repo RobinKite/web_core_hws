@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <script src="code/main.js" defer></script>
+    <title>Game_name</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="difficulty">
+            <!-- <p>Difficulty: </p> -->
+            <button id="but-easy">4x4</button>
+            <button id="but-med">5x5</button>
+            <button id="but-hard">6x6</button>
+        </div>
+        <div class="timer">
+            <!-- <p>Timer: </p> -->
+            <div id="timer">00:00</div>
+        </div>
+        <div class="buttons">
+            <button id="but-hint">Hint</button>
+            <button id="but-res">Restart</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="game-window" id="game-window"></section>
+        <section class="game-rules" id="game-rules"></section>
+    </main>
+
+    <div class="congratulations-window"></div>
+</body>
+
+</html>
